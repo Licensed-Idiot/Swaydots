@@ -15,7 +15,7 @@
 |**Lockscreen**|[Swaylock-effects](https://github.com/mortie/swaylock-effects)|
 |**Shell**|[Zsh](https://www.zsh.org/)|
 |**Shell Framework**|[Oh-My-Zsh](https://github.com/ohmyzsh/ohmyzsh), [Powelevel10k](https://github.com/romkatv/powerlevel10k)|
-|**Music Player**|[Spotify](https://github.com/kpcyrd/spotify-launcher)|
+|**Music Player**|[Spotify](https://github.com/kpcyrd/spotify-launcher), [Spicetify](https://spicetify.app/)|
 |**Media Player**|[Celluloid](https://celluloid-player.github.io/)|
 |**Text Editor**|[Neovim](https://github.com/neovim/neovim)|
 |**GTK Theme**|[Gruvbox Material](https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme)|
@@ -50,3 +50,16 @@
 ### 🚀 Manual Installation
 #### TODO 
 add installations process
+
+### 🔑 Keybinds 
+These are some of the custom & basic keybinds. For more keybinds check [here](https://depau.github.io/sway-cheatsheet/), can also check the keybinds in `~/.config/sway/config.d/keybinds.conf`.
+|        Keybind         |                 Function                 |
+| ---------------------- | ---------------------------------------- |
+| `Win(Super) + Enter`   | Launch terminal (kitty)                  |
+| `Super + Shift + Q`    | Kill focused window                      |
+| `Super + P`            | Take Screenshot                          |
+| `Super + Shift + P`    | Take a snippet Screenshot                |
+| `Super + D`            | Launch Rofi                               |
+| `Alt + Enter`          | Launch Rofi Window Manager                |
+| `Super + Shift + e`    | Show wlogout Menu                        |
+| `Super + Shift + c`    | Restart sway                             |
