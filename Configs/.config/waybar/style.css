@@ -1,0 +1,170 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: RobotoMono Nerd Font;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+window#waybar {
+  background-color: rgba(40, 40, 40, 0.80);
+  color: #ebdbb2;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  border-bottom: solid 0px #3c3836;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+#workspaces button {
+  padding: 0 5px;
+  color: #ebdbb2;
+  border-radius: 5px;
+}
+
+#workspaces button.focused {
+  background-color: #ebdbb2;
+  color: #282828;
+  border-bottom: none;
+}
+
+#workspaces button.urgent {
+  background-color: #cc241d;
+}
+
+#taskbar button {
+    box-shadow: none;
+    text-shadow: none;
+    padding: 0px;
+    border-radius: 9px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 0px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-right: 0px;
+    color: @wb-color;
+    animation: tb_normal 20s ease-in-out 1;
+}
+
+#taskbar button.active {
+    background: #cc241d;
+    color: @wb-act-color;
+    margin-left: 3px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: 3px;
+    animation: tb_active 20s ease-in-out 1;
+    transition: all 0.4s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#taskbar button:hover {
+    background: #458588;
+    color: #282828;
+    animation: tb_hover 20s ease-in-out 1;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+widget > * {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.modules-left > widget > * {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.modules-left > widget:first-child > * {
+  margin-left: 6px;
+}
+
+.modules-left > widget:last-child > * {
+  margin-right: 18px;
+}
+
+.modules-right > widget > * {
+  padding: 0 12px;
+  margin-left: 0;
+  margin-right: 0;
+  color: #ebdbb2;
+}
+
+.modules-right > widget:first-child > * {
+  border-radius: 5px 0 0 5px;
+}
+
+.modules-right > widget:last-child > * {
+  border-radius: 0 5px 5px 0;
+  margin-right: 6px;
+}
+
+#mode {
+  background: transparent;
+  color: #fb4934;
+}
+
+#pulseaudio,
+#backlight,
+#temperature,
+#battery,
+#clock
+
+#pulseaudio {
+    color: #689d6a;
+}
+
+#backlight {
+    color: #458588;
+}
+
+#temperature {
+    color: #cc241d;
+}
+
+#battery {
+    color: #98971a;
+}
+
+#clock {
+    color: #b16286;
+}
+
+@keyframes blink {
+  to {
+    color: #ebdbb2;
+  }
+}
+
+#battery.critical:not(.charging) {
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#custom-updates {
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+#custom-updates.pending-updates {
+	animation-name: blink;
+	animation-duration: 3s;
+}
+
+label:focus {
+  background-color: #282828;
+}
+
+tooltip {
+  border-radius: 5px;
+  background: #504945;
+}
+
+tooltip label {
+  color: #ebdbb2;
+}
