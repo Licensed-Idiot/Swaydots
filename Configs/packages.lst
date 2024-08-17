@@ -8,6 +8,7 @@ fastfetch
 firefox
 gammastep
 git
+gnome-themes-extra
 grimshot
 gruvbox-plus-icon-theme-git
 gst-plugin-pipewire
@@ -15,6 +16,7 @@ gtk-engine-murrine
 imv
 kitty
 kvantum
+murrine-engine
 network-manager-applet
 networkmanager
 nwg-look
@@ -26,6 +28,7 @@ qt5-wayland
 qt6-wayland
 ranger
 rofi-wayland
+sassc
 slurp
 spicetify-cli
 spotify-launcher
