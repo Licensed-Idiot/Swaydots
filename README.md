@@ -43,6 +43,7 @@
 #### Packages
   - swayfx
   - waybar
+  - btop
   - swww
   - rofi
   - swaylock-effects
@@ -79,7 +80,8 @@ You're going to need an aur helper, a guide can be found [here](https://itsfoss.
 ```bash
 sudo yay -S --needed $(awk '{print $1}'  packages.lst)
 ```
-and it should download the latest version of each package. (you can use paru if you want, it's just a package list)
+and it should download the latest version of each package. (you can use paru if you want, it's just a package list).
+Also install Btop from [here](https://github.com/aristocratos/btop?tab=readme-ov-file#installation), and follow it's installation guide
 
 3. **Install Oh-my-zsh on powerlevel10k**
 
@@ -127,7 +129,7 @@ For nwg/gtk, we need to download [Gruvbox Material](https://github.com/Fausto-Ko
 Now to use that theme, type `nwg-look` into your terminal or run the app menu with `Win(Super) + D` and find it there(should be called "GTK Settings").
 Once in the app, select the gtk theme, and the icon theme(icons were installed with the package list, if it doesn't show, you can find out how to install it [here](https://github.com/SylEleuth/gruvbox-plus-icon-pack)). You just click one the ones with the name gruvbox in them, then hit apply in the bottom right corner.
 
-That should be it! I hope you enjoy the configuration, and if you have any problems open an issue, I'll get to you as soon as I can.
+That should be it! I hope you enjoy the configuration, I'll try to figure out a script for the future, and if you have any problems open an issue, I'll get to you as soon as I can.
 
 ### 🔑 Keybinds 
 These are some of the custom & basic keybinds. For more keybinds check [here](https://depau.github.io/sway-cheatsheet/), can also check the keybinds in `~/.config/sway/config.d/keybinds.conf`.
