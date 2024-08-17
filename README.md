@@ -1,4 +1,4 @@
-### 🧑🏾‍🎨 ScreenShot
+### 🖥️ ScreenShot
 
 ![](preview/1.png)
 
