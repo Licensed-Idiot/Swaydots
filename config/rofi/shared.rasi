@@ -1,9 +1,0 @@
-* {
-    font: "CaskaydiaCove Mono Nerd Font Bold 9";
-    background: #1d2021;
-    background-alt: #282828;
-    foreground: #ebdbb2;
-    selected: #ebdbb2;
-    active: #98971a;
-    urgent: #cc241d;
-}

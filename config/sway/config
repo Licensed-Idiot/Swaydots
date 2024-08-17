@@ -1,9 +1,0 @@
-# █▀▄▀█ █ █▀ █▀▀
-# █░▀░█ █ ▄█ █▄▄
-
-for_window [title="systemupdate"] floating enable, resize set 53 ppt 65 ppt
-
-# █▀ █▀█ █░█ █▀█ █▀▀ █▀▀
-# ▄█ █▄█ █▄█ █▀▄ █▄▄ ██▄
-
-include ~/.config/sway/config.d/*
