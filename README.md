@@ -48,6 +48,13 @@
   - cascadia-code-nerd
 
 ### 🚀 Manual Installation
+1. **Clone this repository**
+```bash
+ git clone https://github.com/Licensed-Idiot/dotfiles.git
+```
+
+2.**Install the required software**
+
 #### TODO 
 add installations process
 
