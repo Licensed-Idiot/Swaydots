@@ -47,16 +47,73 @@
   - font-awesome
   - cascadia-code-nerd
 
-### 🚀 Manual Installation
+
+# 🚀 Manual Installation
 1. **Clone this repository**
 ```bash
- git clone https://github.com/Licensed-Idiot/dotfiles.git
+git clone https://github.com/Licensed-Idiot/dotfiles.git
 ```
 
 2.**Install the required software**
 
-#### TODO 
-add installations process
+cd into the cloned dotfiles folder
+```bash
+cd ~/path/to/dotfiles/Configs
+```
+and install the packages found in `packages.lst`.
+You're going to need an aur helper, a guide can be found [here](https://itsfoss.com/install-yay-arch-linux/). Then enter the command
+```bash
+sudo yay -S --needed $(awk '{print $1}'  packages.lst)
+```
+and it should download the latest version of each package. (you can use paru if you want, it's just a package list)
+
+3. **Install Oh-my-zsh on powerlevel10k**
+
+Now that the zsh is installed lets make it our default terminal and make it look nice.
+To install Oh-my-zsh use this command
+```bash
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+Then install Powerlevel10k
+```bash
+git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+```
+I then have these plugins, zsh-syntax-highlighting and zsh-autosuggestions
+```bash
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+after installing copy my zshrc config and p10k config
+```bash
+cp .p10k.zsh ~/
+cp .zshrc ~/
+```
+[guide used](https://dev.to/abdfnx/oh-my-zsh-powerlevel10k-cool-terminal-1no0)
+
+4. **Copy the configurations**
+
+Now for the rest of the configurations, copy the `.config` and `.local` folders from the `Configs` folder into your home directory.
+```bash
+cp -r .config ~/
+cp -r .local ~/
+```
+Afterwards, reboot your system, login, and start sway
+```bash
+sudo reboot
+```
+to start sway after login just type `sway` into your terminal and you should see a mouse cursor and a backround(You can change the backround using [Wallpaper Select](#-keybinds)). 
+Horray! that means my install steps were correct and I didnt mess it up lol.
+
+5. **Set the themes**
+
+Finally, we just have to set our default themes for nwg.
+
+For nwg/gtk, we need to download [Gruvbox Material](https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme), just follow their install steps to get the theme you want (I followed their CLI installation steps). 
+Now to use that theme, type `nwg-look` into your terminal or run the app menu with `Win(Super) + D` and find it there(should be called "GTK Settings").
+Once in the app, select the gtk theme, and the icon theme(icons were installed with the package list, if it doesn't show, you can find out how to install it [here](https://github.com/SylEleuth/gruvbox-plus-icon-pack)). You just click one the ones with the name gruvbox in them, then hit apply in the bottom right corner.
+
+That should be it! I hope you enjoy the configuration, and if you have any problems open an issue, I'll get to you as soon as I can.
 
 ### 🔑 Keybinds 
 These are some of the custom & basic keybinds. For more keybinds check [here](https://depau.github.io/sway-cheatsheet/), can also check the keybinds in `~/.config/sway/config.d/keybinds.conf`.
@@ -68,5 +125,9 @@ These are some of the custom & basic keybinds. For more keybinds check [here](ht
 | `Super + Shift + P`    | Take a snippet Screenshot                |
 | `Super + D`            | Launch Rofi                               |
 | `Alt + Enter`          | Launch Rofi Window Manager                |
-| `Super + Shift + e`    | Show wlogout Menu                        |
-| `Super + Shift + c`    | Restart sway                             |
+| `Super + Shift + E`    | Show wlogout Menu                        |
+| `Super + Shift + C`    | Restart sway                             |
+| `Super + Shift + W`    | Wallpaper select                         |
+
+#### TODO 
+add a dunst config
