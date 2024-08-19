@@ -57,3 +57,6 @@ swww_command=" swww img \
 
 # Set wallpaper
 [[ -n "$wall_selection" ]] && $swww_command "${wall_dir}/${wall_selection}"
+
+# Prints the selected wallpaper to the defaulwall.sh, loads this on startup
+printf "#!/bin/bash\n\ndir=${wall_dir}/${wall_selection}\n\necho \$dir" > ~/.config/wallpapers/defaultwall.sh
