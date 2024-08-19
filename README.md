@@ -78,7 +78,7 @@ cd ~/path/to/dotfiles/Configs
 and install the packages found in `packages.lst`.
 You're going to need an aur helper, a guide can be found [here](https://itsfoss.com/install-yay-arch-linux/). Then enter the command
 ```bash
-sudo yay -S --needed $(awk '{print $1}'  packages.lst)
+yay -S --needed $(awk '{print $1}'  packages.lst)
 ```
 and it should download the latest version of each package. (you can use paru if you want, it's just a package list).
 Also install Btop from [here](https://github.com/aristocratos/btop?tab=readme-ov-file#installation), and follow it's installation guide
@@ -116,7 +116,7 @@ cp -r .local ~/
 ```
 Afterwards, reboot your system, login, and start sway
 ```bash
-sudo reboot
+reboot
 ```
 to start sway after login just type `sway` into your terminal and you should see a mouse cursor and a backround(You can change the backround using [Wallpaper Select](#-keybinds)). 
 Horray! that means my install steps were correct and I didnt mess it up lol.
