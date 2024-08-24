@@ -156,3 +156,4 @@ These are some of the custom & basic keybinds. For more keybinds check [here](ht
 
 #### TODO 
 add a dunst config
+add an install script
