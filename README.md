@@ -155,5 +155,5 @@ These are some of the custom & basic keybinds. For more keybinds check [here](ht
 | `Super + Shift + W`    | Wallpaper select                         |
 
 #### TODO 
-add a dunst config
-add an install script
+- [x] ~Add a dunst config~
+- [ ] Add an install script
