@@ -1,3 +1,12 @@
+<div align="center">
+<img src="https://github.com/WillPower3309/swayfx/blob/master/assets/swayfx_logo.svg" width="256" alt="swayfx logo">
+<p>My customized SwayFX-Gruvbox themed dotfile configurations & scripts</p>
+<a href='#'><img src="https://img.shields.io/badge/Sway-Dotfiles-_%3F?style=flat-square&logo=wayland&logoColor=b16286&labelColor=282828&color=b16286"/></a>
+<a href='#'><img src="https://img.shields.io/badge/Maintained%3F-Yes-green.svg?style=flat-square&labelColor=282828&color=458588"></img></a>
+</div>
+
+---
+
 ### 🖥️ ScreenShot
 
 ![](preview/1.png)
@@ -126,8 +135,8 @@ Horray! that means my install steps were correct and I didnt mess it up lol.
 Finally, we just have to set our default themes for nwg.
 
 For nwg/gtk, we need to download [Gruvbox Material](https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme), just follow their install steps to get the theme you want (I followed their CLI installation steps). 
-Now to use that theme, type `nwg-look` into your terminal or run the app menu with `Win(Super) + D` and find it there(should be called "GTK Settings").
-Once in the app, select the gtk theme, and the icon theme(icons were installed with the package list, if it doesn't show, you can find out how to install it [here](https://github.com/SylEleuth/gruvbox-plus-icon-pack)). You just click one the ones with the name gruvbox in them, then hit apply in the bottom right corner.
+Now to use that theme, type `nwg-look` into your terminal or run the app menu with `Win(Super) + D` and find it there (should be called "GTK Settings").
+ Once in the app, select the gtk theme, and the icon theme (icons were installed with the package list, if it doesn't show, you can find out how to install it [here](https://github.com/SylEleuth/gruvbox-plus-icon-pack)). You just click one the ones with the name gruvbox in them, then hit apply in the bottom right corner. To see the changes, restart sway `Super + Shift + C`
 
 That should be it! I hope you enjoy the configuration, I'll try to figure out a script for the future, and if you have any problems open an issue, I'll get to you as soon as I can.
 
@@ -147,3 +156,4 @@ These are some of the custom & basic keybinds. For more keybinds check [here](ht
 
 #### TODO 
 add a dunst config
+add an install script
