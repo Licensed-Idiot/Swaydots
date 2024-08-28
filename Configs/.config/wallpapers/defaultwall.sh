@@ -1,5 +1,5 @@
 #!/bin/bash
 
-dir=/home/"$USER"/.config/wallpapers/anime_skull.png
+dir=/home/idiot/.config/wallpapers/wallhaven-2e2xyx.jpg
 
 echo $dir

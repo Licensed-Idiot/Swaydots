@@ -2,6 +2,7 @@
 # █░▀░█ █ ▄█ █▄▄
 
 for_window [title="systemupdate"] floating enable, resize set 53 ppt 65 ppt
+for_window [app_id="firefox"] opacity 0.93
 
 # █▀ █▀█ █░█ █▀█ █▀▀ █▀▀
 # ▄█ █▄█ █▄█ █▀▄ █▄▄ ██▄
