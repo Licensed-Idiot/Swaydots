@@ -1,9 +1,12 @@
 #!/bin/bash
 
-read -p "Install AUR helper
+# get the prefferred AUR helper
+echo -e "\n" 
+read -n 1 -p "Install AUR helper
 	[1] yay
 	[2] paru 
 	(default=1): " aur
+echo -e "\n"
 
 # set default option for AUR helper
 if ! [ $aur ]; then
