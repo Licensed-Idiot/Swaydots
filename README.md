@@ -75,7 +75,7 @@
 # 🚀 Manual Installation
 1. **Clone this repository**
 ```bash
-git clone https://github.com/Licensed-Idiot/dotfiles.git
+git clone https://github.com/Licensed-Idiot/dotfiles.git ~/dotfiles
 ```
 
 2.**Install the required software**
