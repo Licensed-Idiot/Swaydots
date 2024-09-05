@@ -22,6 +22,21 @@
 ![](preview/4.png)
 </details>
 
+## Installation(with script)
+To install, execute the following commands:
+
+```shell
+pacman -S git
+git clone https://github.com/Licensed-Idiot/Swaydots.git ~/Swaydots
+cd ~/Swaydots/Install
+./install.sh
+```
+As a second install option, you can also use [Manual Installation](#-manual-installation), which might be easier for some.
+
+Please reboot after the install script completes.
+
+If the theming of kvantum and gtk doesn't automatically apply, refer [here](#set-the-themes)
+
 ### 🗒️ Info
 
 |Program|Name|
@@ -75,7 +90,7 @@
 # 🚀 Manual Installation
 1. **Clone this repository**
 ```bash
-git clone https://github.com/Licensed-Idiot/dotfiles.git ~/dotfiles
+git clone https://github.com/Licensed-Idiot/Swaydots.git ~/Swaydots
 ```
 
 2.**Install the required software**
@@ -130,7 +145,7 @@ reboot
 to start sway after login just type `sway` into your terminal and you should see a mouse cursor and a backround(You can change the backround using [Wallpaper Select](#-keybinds)). 
 Horray! that means my install steps were correct and I didnt mess it up lol.
 
-5. **Set the themes**
+## Set the themes
 
 Finally, we just have to set our default themes for nwg.
 
@@ -153,7 +168,3 @@ These are some of the custom & basic keybinds. For more keybinds check [here](ht
 | `Super + Shift + E`    | Show wlogout Menu                        |
 | `Super + Shift + C`    | Restart sway                             |
 | `Super + Shift + W`    | Wallpaper select                         |
-
-#### TODO 
-- [x] ~Add a dunst config~
-- [ ] Add an install script
