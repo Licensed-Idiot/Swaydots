@@ -21,6 +21,10 @@
 
 ![](preview/4.png)
 </details>
+<div align="center">
+
+![](Configs/.config/fastfetch/png/logo.png)
+</div>
 
 ## Installation(with script)
 To install, execute the following commands:
