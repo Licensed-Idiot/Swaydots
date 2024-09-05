@@ -1,5 +1,7 @@
+amd-ucode
 base
 base-devel
+bitwarden
 brightnessctl
 cava
 celluloid
@@ -26,7 +28,6 @@ networkmanager
 networkmanager-openvpn
 nwg-look
 otf-font-awesome
-pipes.sh
 pipewire
 pipewire-pulse
 pwvucontrol
@@ -51,5 +52,4 @@ wlogout
 xdg-desktop-portal-wlr
 xorg-xdpyinfo
 xorg-xwayland
-zram-generator
 zsh
