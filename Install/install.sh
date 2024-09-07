@@ -20,7 +20,7 @@ else
 fi
 
 if [ $AUR_HELPER ]; then
-    $AUR_HELPER -S --needed $(awk '{print $1}'  packages.lst)
+    $AUR_HELPER -S --needed --noconfirm $(awk '{print $1}'  packages.lst)
 fi
 
 
