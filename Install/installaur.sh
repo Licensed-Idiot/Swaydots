@@ -32,3 +32,5 @@ elif [ $aur == "2" ]; then
 else
     echo -e "Not a valid option"
 fi
+
+bash install.sh
