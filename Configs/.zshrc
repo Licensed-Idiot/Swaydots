@@ -1,5 +1,5 @@
 # oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="/usr/share/oh-my-zsh"
 
 # use powerlevel10k theme
 ZSH_THEME="powerlevel10k/powerlevel10k"
