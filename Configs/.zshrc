@@ -26,6 +26,8 @@ alias vim="nvim"
 # Custom exports for scripts 
 export PATH=~/.local/share/bin/:$PATH
 export XDG_SCREENSHOTS_DIR=$HOME/Pictures
+export QT_QPA_PLATFORM=wayland
+export MOZ_ENABLE_WAYLAND=1
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
