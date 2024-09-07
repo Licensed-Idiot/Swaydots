@@ -18,12 +18,14 @@ if [ $aur == "1" ]; then
     git clone https://aur.archlinux.org/yay.git
     cd yay
     makepkg -si
+    cd ~/Swaydots/Install && rm -rf yay
 
 # if paru install paru
 elif [ $aur == "2" ]; then
     git clone https://aur.archlinux.org/paru.git
     cd paru
     makepkg -si
+    cd ~/Swaydots/Install && rm -rf paru
 
 else
     echo -e "Not a valid option"
