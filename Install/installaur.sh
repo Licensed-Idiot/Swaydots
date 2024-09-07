@@ -19,6 +19,7 @@ if [ $aur == "1" ]; then
     cd yay
     makepkg -si
     cd ~/Swaydots/Install && rm -rf yay
+    export AUR_HELPER=yay
 
 # if paru install paru
 elif [ $aur == "2" ]; then
@@ -26,6 +27,7 @@ elif [ $aur == "2" ]; then
     cd paru
     makepkg -si
     cd ~/Swaydots/Install && rm -rf paru
+    export AUR_HELPER=paru
 
 else
     echo -e "Not a valid option"

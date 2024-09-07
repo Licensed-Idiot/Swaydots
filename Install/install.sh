@@ -3,10 +3,10 @@
 # check if AUR helper is installed
 
 if type -p yay > /dev/null; then
-    aur_helper=yay
+    export AUR_HELPER=yay
 
 elif type -p paru > /dev/null; then
-    aur_helper=paru
+    export AUR_HELPER=paru
 else
     read -n 1 -p "AUR helper not installed, install? (Y/n): " answer
     answer="${answer:=Y}"
@@ -19,8 +19,8 @@ else
     fi
 fi
 
-if [ $aur_helper ]; then
-    $aur_helper -S --needed $(awk '{print $1}'  packages.lst)
+if [ $AUR_HELPER ]; then
+    $AUR_HELPER -S --needed $(awk '{print $1}'  packages.lst)
 fi
 
 
