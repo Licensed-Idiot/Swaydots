@@ -2,10 +2,10 @@
 
 # check if AUR helper is installed
 
-if type -p yay > /dev/null; then
+if pacman -Qi yay > /dev/null; then
     export AUR_HELPER=yay
 
-elif type -p paru > /dev/null; then
+elif pacman -Qi paru > /dev/null; then
     export AUR_HELPER=paru
 else
     read -n 1 -p "AUR helper not installed, install? (Y/n): " answer
@@ -25,7 +25,11 @@ fi
 
 
 # if zsh installed, install Oh-My-Zsh
-if type -p zsh > /dev/null; then
+if pacman -Qi zsh > /dev/null && pacman -Qi oh-my-zsh-git > /dev/null; then
+    # make zsh default shell
+    chsh -s $(which zsh)
+
+    # export ZSH_CUSTOM for the plugins
     export ZSH_CUSTOM="/usr/share/oh-my-zsh/custom"
 
     # install zsh plugins
