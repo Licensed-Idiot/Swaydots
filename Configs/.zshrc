@@ -16,7 +16,6 @@ export EDITOR='nvim'
 alias hcl="history -c" #clear history
 alias gcl="git clone"
 alias c="clear" # clear terminal
-alias vencord='sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
 alias ls="eza --icons=auto"
 alias  l="eza -lh  --icons=auto" # long list
 alias ll="eza -lha --icons=auto --sort=name --group-directories-first" # long list all
@@ -26,7 +25,7 @@ alias vim="nvim"
 
 # Custom exports for scripts 
 export PATH=~/.local/share/bin/:$PATH
-export XDG_SCREENSHOTS_DIR=/home/idiot/screenshots
+export XDG_SCREENSHOTS_DIR=$HOME/Pictures
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

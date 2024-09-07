@@ -20,6 +20,8 @@
 ![](preview/3.png)
 
 ![](preview/4.png)
+
+More awesome wallpapers [here](https://gruvbox-wallpapers.pages.dev/)
 </details>
 <div align="center">
 

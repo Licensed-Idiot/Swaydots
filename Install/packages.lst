@@ -1,7 +1,3 @@
-amd-ucode
-base
-base-devel
-bitwarden
 brightnessctl
 cava
 celluloid
@@ -11,12 +7,12 @@ eza
 fastfetch
 firefox
 gammastep
-git
 gnome-keyring
 grimshot
 gst-plugin-pipewire
 gtk-engine-murrine
 gufw
+imagemagick
 imv
 kitty
 kvantum
@@ -50,6 +46,7 @@ waybar
 waybar-updates
 wlogout
 xdg-desktop-portal-wlr
+xdg-user-dirs
 xorg-xdpyinfo
 xorg-xwayland
 zsh
