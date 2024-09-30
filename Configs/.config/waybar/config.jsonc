@@ -3,7 +3,7 @@
   "position": "bottom",
   "modules-left": ["sway/workspaces", "custom/updates", "tray", "sway/mode"],
   "modules-center":["wlr/taskbar"],
-  "modules-right": ["pulseaudio", "backlight", "temperature", "battery", "clock", "custom/power"],
+  "modules-right": ["pulseaudio", "backlight", "temperature", "cpu", "battery", "clock", "custom/power"],
   "clock": {
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     "format": "{:%b %d(%H:%M) 󰃰}"
@@ -66,14 +66,14 @@
     "on-click": "logout.sh"
   },
   "custom/updates": {
-    "format": "{icon}{}",
+    "format": "{}{icon}",
     "return-type": "json",
     "format-icons": {
       "pending-updates": "󰮯 ",
       "updated": ""
     },
     "exec-if": "which waybar-updates",
-    "exec": "waybar-updates",
+    "exec": "waybar-updates -n",
     "on-click": "kitty --title systemupdates updates.sh"
   },
   "temperature": {
@@ -84,6 +84,14 @@
     "format": "{temperatureC}°C {icon}",
     "format-icons": ["", "", ""],
     "on-click": "kitty btop"
+  },
+  "cpu": {
+    "format": "{usage}% ",
+    "tooltip": false,
+    "on-click": "kitty btop"
+  },
+  "memory": {
+        "format": "{}% "
   },
   "wlr/taskbar": {
     "format": "{icon}",
