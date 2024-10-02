@@ -69,7 +69,7 @@
     "format": "{}{icon}",
     "return-type": "json",
     "format-icons": {
-      "pending-updates": "󰮯 ",
+      "pending-updates": " 󰮯",
       "updated": ""
     },
     "exec-if": "which waybar-updates",
