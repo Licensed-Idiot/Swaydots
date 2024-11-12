@@ -73,7 +73,7 @@
       "updated": ""
     },
     "exec-if": "which waybar-updates",
-    "exec": "waybar-updates -n",
+    "exec": "waybar-updates",
     "on-click": "kitty --title systemupdates updates.sh"
   },
   "temperature": {
